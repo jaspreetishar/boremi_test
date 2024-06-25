@@ -5,7 +5,7 @@ Bokeh-based jupyter-interface for Registering spatio-molecular data to related M
 
 ## Play with the example data by clicking on the binder badge below! No need for installation/setup!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jaspreetishar/BoReMi/main?urlpath=/lab/tree/Binder/GUI.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jaspreetishar/boremi_test/main?urlpath=/lab/tree/Binder/GUI.ipynb)
 
 
 ## Example Data Sources -

@@ -1,3 +1,5 @@
+pip==23.1.2
+ipykernel==6.25.0
 bokeh>=3.5.0
 jupyter_bokeh>=3.0.2
 anndata>=0.8.0

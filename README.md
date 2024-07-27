@@ -27,19 +27,25 @@ Bokeh-based jupyter-interface for Registering spatio-molecular data to related M
 
 ## Quick Start Guide: Setting up BoReMi on a Cluster or a Local Environment
 
-1. Notebooks: To set up BoReMi, two notebooks are provided in the "BoReMi directory" on the repository's main page: GUI.ipynb and Functions.ipynb.
-   - GUI.ipynb serves as a graphical user interface.
-   - Functions.ipynb contains all the necessary functions.
+1. Notebooks: To set up BoReMi, two notebooks are provided in the `BoReMi directory` on the repository's main page: `GUI.ipynb` and `Functions.ipynb`.
+   - `GUI.ipynb` serves as a graphical user interface.
+   - `Functions.ipynb` contains all the necessary functions.
   
 2. Obtaining the notebooks: There are two methods to obtain the notebooks.
    - Direct Download: Click on "Code" at the upper right corner of this repository and select "Download ZIP". Move the downloaded .zip file to the desired directory on your local machine/cluster and unpack it.
-   - Git Clone: Use the command "git clone https://github.com/jaspreetishar/BoReMi.git" to clone the repository and extract the notebooks onto your local machine/cluster.
+   - Git Clone: Use the command `git clone https://github.com/jaspreetishar/BoReMi.git` to clone the repository and extract the notebooks onto your local machine/cluster.
 
-3. Required Libraries/Packages/Extensions
+3. Required Libraries/Packages/Extensions: Ensure you install the necessary libraries, packages, and extensions specified in the `requirements.txt` file located on the repository's main page using the following guidelines.
 
-   - Install Required Libraries/Packages/Extensions
-     - Ensure you install the necessary libraries, packages, and extensions specified in the `requirements.txt` file located on the repository's main page using the following guidelines:
-   
+   - Navigate to the Project Directory
+     - First, navigate to the root directory of the project. For example:
+      
+        ```bash
+        cd path/to/BoReMi
+        ```
+        
+        *Replace `path/to/BoReMi` with the actual path to the cloned repository.*
+     
    - Create a New Virtual Environment
      - To avoid conflicts with existing versions of the required libraries/packages/extensions, it is recommended to create a new virtual environment. For instance, you can use Conda to create this environment:
 
@@ -54,13 +60,37 @@ Bokeh-based jupyter-interface for Registering spatio-molecular data to related M
        ```bash
        pip install -r requirements.txt
        ```
+
+   - Install Jupyter Lab and Connect the IPython Kernel
+     - Install Jupyter Lab and set up the IPython kernel for your virtual environment:
+
+        ```bash
+        conda install -c conda-forge jupyterlab=3.6.3
+        python -m ipykernel install --user --name=boremi_env
+        ```
+
+       *This will allow you to select the boremi_env kernel when running Jupyter Lab.*
+  
    - Update Regularly
-     - Periodically check for updates to the `requirements.txt` file and update your virtual environment accordingly to stay compatible with the latest features and fixes.
+     - Periodically check for updates to the `requirements.txt` file and update your virtual environment accordingly to stay compatible with the latest features and fixes:
+
+       ```bash
+       pip install --upgrade -r requirements.txt
+       ```
 
    #### *By following these steps, you will ensure that BoReMi runs smoothly without any library conflicts, improving user experience.*
        
-4. Accessing the GUI: To use BoReMi, open the notebook that contains the GUI. Type "jupyter-lab {absolute_address_of_the_GUI.ipynb}" in the terminal or an Anaconda command prompt.
+5. Accessing the GUI: To use BoReMi, open the `GUI.ipynb` file by typing the following in the terminal or an Anaconda command prompt:
+   
+   ```bash
+   jupyter-lab path/to/BoReMi/BoReMi/GUI.ipynb
+   ```
+   *Replace `path/to/BoReMi/BoReMi/GUI.ipynb` with the actual path to the `GUI.ipynb` file present in the `BoReMi directory` of the cloned repository.*
 
-5. BoReMi Usage: Follow the provided guidelines and instructions inside GUI.ipynb. Begin using the tool and explore its functionalities.
+6. BoReMi Usage: Follow the provided guidelines and instructions inside `GUI.ipynb`. Begin using the tool and explore its functionalities.
 
-6. Exit: To exit the virtual environment, type "conda deactivate" in the terminal or an anaconda command prompt.
+7. Exit: To exit the virtual environment, type the following in the terminal or an Anaconda command prompt:
+   
+   ```bash
+   conda deactivate
+   ```

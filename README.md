@@ -43,17 +43,17 @@ Bokeh-based jupyter-interface for Registering spatio-molecular data to related M
    - Create a New Virtual Environment
      - To avoid conflicts with existing versions of the required libraries/packages/extensions, it is recommended to create a new virtual environment. For instance, you can use Conda to create this environment:
 
-     ```bash
-     conda create --name boremi_env python=3.11.5
-     conda activate boremi_env
-     ```
+       ```bash
+       conda create --name boremi_env python=3.11.5
+       conda activate boremi_env
+       ```
      
    - Install Dependencies in the Virtual Environment
      - Once the virtual environment is activated, install the dependencies from the `requirements.txt` file:
      
-     ```bash
-     pip install -r requirements.txt
-     ```
+       ```bash
+       pip install -r requirements.txt
+       ```
    - Update Regularly
      - Periodically check for updates to the `requirements.txt` file and update your virtual environment accordingly to stay compatible with the latest features and fixes.
 

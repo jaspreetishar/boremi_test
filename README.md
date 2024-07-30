@@ -1,7 +1,7 @@
 # BoReMi
 Bokeh-based jupyter-interface for Registering spatio-molecular data to related Microscopy images.
 
-![BoReMi Logo](https://github.com/jaspreetishar/boremi_test/blob/main/BoReMi-Logo.png)
+![BoReMi Logo](https://github.com/jaspreetishar/boremi_test/blob/main/BoReMi_Logo.png)
 
 ## Play with the example data by clicking on the binder badge below! <br>No need for installation/ setup!
 
